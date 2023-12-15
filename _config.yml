@@ -1,0 +1,24 @@
+url: https://rocs-iitb.github.io
+baseurl: /
+
+title: Research Opportunities in Computer Science
+email: rocsiitb@gmail.com
+description: "Workshop on Research Opportunities in Computer Science."
+
+social:
+  - title: twitter
+    url: http://twitter.com/jekyllrb
+  - title: stack-overflow
+    url: http://stackoverflow.com/questions/tagged/jekyll
+  - title: bitbucket 
+    url: http://bitbucket.org/jekyll
+  - title: github
+    url: http://github.com/jekyll
+
+address:
+  - line: IIT Bombay, Powai
+  - line: Mumbai, Maharashtra, India
+
+markdown: kramdown
+permalink: pretty
+remote_theme: y7kim/agency-jekyll-theme
