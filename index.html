@@ -18,6 +18,20 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 </head>
+
+<script>
+    /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("mobnav").style.marginTop = `0px`;
+        } else {
+            document.getElementById("mobnav").style.marginTop = `${document.getElementById("mobnav").style.marginTop.split('px')[0] - 3}px`;
+        }
+        prevScrollpos = currentScrollPos;
+    }
+</script>
     
     <body id="page-top" class="index">
         
@@ -54,8 +68,8 @@
                     </ul>
                 </nav>
             </div>
-            <div class="div-only-mobile">
-                <ul class="mobile-menu navbar-nav navbar-right">
+            <div class="div-only-mobile" id="mobnav" style="top:0">
+                <ul class="mobile-menu navbar-nav navbar-shrink navbar-right">
                     <li>
                         <a class="page-scroll" href="#page-top">Home</a>
                     </li>
